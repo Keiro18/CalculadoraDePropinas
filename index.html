@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>CALCULADORA DE PROPINAS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <h1 class="titulo-h1">
+                CALCULADORA DE PROPINAS
+            </h1>
+        </div>
+        <div class="entradas">
+            <form id="form">
+                <h4 class="centrado-form">
+                    CUENTA TOTAL
+                </h4>
+                <input type="text" id="cuentaTotal" class="centrado-form__input1" required >
+                <h4 class="centrado-form__2">
+                    PROPINA
+                </h4>
+                <input type="text" class="centrado-form__input2" id="propina" required><br><br>
+                <button type="button" class="centrado-form__boton" id="boton" onClick="copiarDatos()" class="boton">Calcular Propina</button>
+            </form>
+        </div>
+        <div>
+            <h2 class="resumen__h2">
+                RESUMEN
+            </h2>
+        </div>
+        <div id="final">
+            <label id="t4">TOTAL DE LA CUENTA</label><p id="t1"></p>
+            <label id="t5">PROPINA</label><p id="t2"></p>
+            <label id="t6">TOTAL A PAGAR</label><p id="t3"></p>
+        </div>
+
+        <script src="script.js"> </script>
+    </body>
+</html>
